@@ -994,11 +994,11 @@ a:hover {
 }
 
 .page-item.active .page-link {
-  background-color: #4e7396;
+  background-color: #F1062F;
 }
 
 .page-link {
-  color: #5F8AB0;
+  color: #175283;
   padding: 0.5rem 0.9rem;
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;
