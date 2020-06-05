@@ -3499,7 +3499,7 @@ a:hover {
   padding: 16px 31px;
 }
 .btn-shadow.btn-shadow-secondary {
-  background: #fff;
+  background: #E5E5E5;
   color: #444;
   text-shadow: none;
 }
@@ -3507,10 +3507,10 @@ a:hover {
   background: linear-gradient(#2083fe, #1d7bf0);
 }
 .btn-shadow.btn-shadow-dark {
-  background: #2C394D;
+  background: #144D75;
 }
 .btn-shadow.btn-shadow-info {
-  background: #42B1E2;
+  background: #2E84AB;
 }
 .btn-shadow.btn-shadow-warning {
   background: #E2B477;

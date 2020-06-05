@@ -5404,9 +5404,10 @@ a.bg-dark:focus, a.bg-dark:hover {
   clear: both;
   content: "";
 }
-
-.d-none {
-  display: none !important;
+@media (max-width: 755px) {
+.w-25 {
+  width: 40% !important;
+}
 }
 
 .d-inline {
@@ -6365,7 +6366,7 @@ a.bg-dark:focus, a.bg-dark:hover {
 }
 
 .w-25 {
-  width: 25% !important;
+  width: 20% ;
 }
 
 .w-50 {

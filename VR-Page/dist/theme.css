@@ -1182,7 +1182,7 @@ a:hover {
   padding: 16px 31px;
 }
 .btn-shadow.btn-shadow-secondary {
-  background: #fff;
+  background: #E5E5E5;
   color: #444;
   text-shadow: none;
 }
@@ -1190,10 +1190,10 @@ a:hover {
   background: linear-gradient(#2083fe, #1d7bf0);
 }
 .btn-shadow.btn-shadow-dark {
-  background: #2C394D;
+  background: #144D75;
 }
 .btn-shadow.btn-shadow-info {
-  background: #42B1E2;
+  background: #2E84AB;
 }
 .btn-shadow.btn-shadow-warning {
   background: #E2B477;
@@ -15544,8 +15544,8 @@ body {
   }
 }
 .navbar-light .nav-item .nav-link {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 750;
+  font-size: 20px;
   color: rgba(0, 0, 0, 0.6);
   -webkit-transition: color 0.15s linear;
   -moz-transition: color 0.15s linear;
@@ -15555,8 +15555,8 @@ body {
 }
 @media (min-width: 992px) {
   .navbar-light .nav-item .nav-link {
-    padding: 32px 0px;
-    margin: 0 8px;
+    padding: 2px 9px;
+    margin: 40 25px;
   }
 }
 .navbar-light .nav-item .nav-link:hover, .navbar-light .nav-item .nav-link:focus {
