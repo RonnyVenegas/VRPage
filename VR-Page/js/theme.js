@@ -234,7 +234,7 @@ var global_notifications = {
   init: function () {
     setTimeout(function () {
       $(".global-notification").removeClass("uber-notification").addClass("uber-notification-remove");
-    }, 5000);
+    }, 20000);
   }
 };
 
