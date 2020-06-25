@@ -57,9 +57,9 @@
     </div>
 </div>
 
-<div class="index-devices mobile-alt">
+<div class="index-devices mobile-alt" id="velvetInfo">
     <section class="clearfix">
-        <img src="assets/images/devices/pht1.jpg" height="473px" width="689px" class="devices" />
+        <img src="assets/images/pht1.jpg" height="473px" width="689px" class="devices" />
 
         <h4>Somos ¡Velvet Room!</h4>
         <p>
@@ -74,7 +74,7 @@
     </section>
 </div>
 
-<div class="agency-portfolio">
+<div class="agency-portfolio" id="magic">
     <div class="container">
         <h2>
             Magic the gathering
@@ -151,12 +151,12 @@
     <h2>
         ¡Nuevo producto en camino!
     </h2>
-    <a href="#contact" class="scroll">
+    <a href="https://www.facebook.com/VelvetRoomGameStore" class="scroll">
         Contáctanos
     </a>
 </div>
 
-<div class="agency-portfolio">
+<div class="agency-portfolio" id="pokemon">
     <div class="container">
         <h2>
             Pokemon TCG
@@ -164,6 +164,40 @@
 
         <div class="row">
             <div class="col-lg-4 col-md-6" *ngFor="let item of pokemonList;">
+                <a class="project" data-toggle="modal" data-target="#productsModal" (click)="modalInjection(item)">
+                    <span class="mask">
+                        <span class="info">
+                            <h3>{{item.name}}</h3>
+                        </span>
+                        <span class="btn-see-project">
+                            Ver producto
+                        </span>
+                    </span>
+                    <span style="background-image:url('assets/images/unsplash/{{item.image}}');" class="pic">
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="index-photography-cta my-4">
+    <h2>
+        ¡Nuevo producto en camino!
+    </h2>
+    <a href="https://www.facebook.com/VelvetRoomGameStore" class="scroll">
+        Contáctanos
+    </a>
+</div>
+
+<div class="agency-portfolio" id='others'>
+    <div class="container">
+        <h2>
+            Accesorios
+        </h2>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6" *ngFor="let item of othersList">
                 <a class="project" data-toggle="modal" data-target="#productsModal" (click)="modalInjection(item)">
                     <span class="mask">
                         <span class="info">

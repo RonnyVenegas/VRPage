@@ -24,8 +24,8 @@ export class MainComponent implements OnInit {
   rowQOT: number;
 
   /** Modal Model */
-  productModelForModal = new Product('id', 'Name', 'Description',
-   'Price', 'Status', 'Type', 'productMTG1.png');
+  productModelForModal = new Product('', '', '',
+   '', '', '', 'MTGCORESET2020B.jpg');
 
   /** Messages */
   notificationMessage = 'Medidas COVID-19: Actualmente sólo está disponible la zona de ventas en el local Gracias por su comprensión';
@@ -96,7 +96,7 @@ export class MainComponent implements OnInit {
         this.magicList.push(element);
       } else if (element.type === 'Pokemon') {
         this.pokemonList.push(element);
-      } else {
+      } else if (element.type === 'Accesorios') {
         this.othersList.push(element);
       }
     });
