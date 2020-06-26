@@ -169,7 +169,7 @@ export class MainComponent implements OnInit {
 
   /* 5. API will call this function when Player State changes like PLAYING, PAUSED, ENDED */
   onPlayerStateChange(event) {
-    console.log(event)
+    console.log(event);
     switch (event.data) {
       case window['YT'].PlayerState.PLAYING:
         if (this.cleanTime() === 0) {
