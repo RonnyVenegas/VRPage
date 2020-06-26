@@ -57,7 +57,7 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
 
     /** Video URL after watch?= */
-    this.video = 'W0W00MaCDBY';
+    this.video = 'xX0SmdXp5d4';
     this.init();
 
     this.productList.push(new Product('MTGCS0', 'Mtg Core Set 2020', 'Booster Box',
