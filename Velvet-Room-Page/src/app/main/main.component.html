@@ -74,6 +74,37 @@
     </section>
 </div>
 
+<!-- Hay 2 maneras para que deje la que mas le sirva -->
+
+<!-- Opcion 1: inserta en el iframe el video en el src 
+    no se auto reproduce pero no necesita nada mas pero rechaza algunos videos.
+    21:9 aspect ratio
+    <div class="embed-responsive embed-responsive-21by9">
+    </div>
+  
+    16:9 aspect ratio
+    <div class="embed-responsive embed-responsive-16by9">
+    </div>
+  
+    4:3 aspect ratio
+    <div class="embed-responsive embed-responsive-4by3">
+    </div>
+  
+    1:1 aspect ratio
+    <div class="embed-responsive embed-responsive-1by1">
+    <iframe class="embed-responsive-item" src="..."></iframe>
+    </div>
+-->
+<!--
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=JjDsRN89sIA" allowfullscreen></iframe>
+</div>
+-->
+<!-- Opcion 2 usa parte de la 1: Lleva todo el backend en el otro lado repite el video creo que se le puede agregar una lista-->
+<div class="embed-responsive embed-responsive-16by9">
+    <div id="player"></div>
+</div>
+
 <div class="agency-portfolio" id="magic">
     <div class="container">
         <h2>
