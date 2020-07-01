@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/models/product';
+import { PinchZoomModule } from 'ngx-pinch-zoom';
 
 
 @Component({

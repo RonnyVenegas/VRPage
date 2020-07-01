@@ -7,6 +7,7 @@ import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PokemonViewComponent } from './pokemon-view/pokemon-view.component';
+import { PinchZoomModule } from 'ngx-pinch-zoom';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PokemonViewComponent } from './pokemon-view/pokemon-view.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PinchZoomModule
   ],
   providers: [],
   bootstrap: [AppComponent]
