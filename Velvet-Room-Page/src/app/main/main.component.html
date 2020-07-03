@@ -6,12 +6,13 @@
 <div class="index-slider-header">
     <div id="spacial-slider" class="slider-component fxSoftScale">
         <ul class="itemwrap">
+            
             <li class="slide slide--left current">
                 <div class="container">
-                    <h2>
-                        Nuevo producto
+                    <h2 >
+                        Nuevamente disponible
                     </h2>
-                    <a href="#" class="btn-shadow btn-shadow-lg btn-shadow-secondary">
+                    <a href="https://api.whatsapp.com/send?phone=+50687537917" class="btn-shadow btn-shadow-lg btn-shadow-secondary">
                         Contáctanos
                     </a>
                 </div>
@@ -19,12 +20,13 @@
                 <div class="pic" style="background-image: url('assets/images/unsplash/slider1.jpg');">
                 </div>
             </li>
-            <li class="slide slide--left">
+            
+            <li class="slide slide--left ">
                 <div class="container">
-                    <h2 class="customFadeInUp">
-                        Nueva expansión <br> MTG
+                    <h2>
+                        Core Set 2021
                     </h2>
-                    <a href="#" class="btn-shadow btn-shadow-lg btn-shadow-dark customFadeInUp">
+                    <a href="https://api.whatsapp.com/send?phone=+50687537917" class="btn-shadow btn-shadow-lg btn-shadow-secondary">
                         Contáctanos
                     </a>
                 </div>
@@ -32,12 +34,12 @@
                 <div class="pic" style="background-image: url('assets/images/unsplash/slider2.jpg');">
                 </div>
             </li>
-            <li class="slide slide--left">
+            
+            <li class="slide slide--left ">
                 <div class="container">
-                    <h2 class="customFadeInUp">
-                        Nueva expansión <br> Pokémon
+                    <h2>Pokemon Rebel Clash
                     </h2>
-                    <a href="#" class="btn-shadow btn-shadow-lg btn-shadow-info customFadeInUp">
+                    <a href="https://api.whatsapp.com/send?phone=+50687537917" class="btn-shadow btn-shadow-lg btn-shadow-secondary">
                         Contáctanos
                     </a>
                 </div>
@@ -57,17 +59,16 @@
     </div>
 </div>
 
-<div class="index-devices mobile-alt" id="velvetInfo">
+<div class="index-devices mobile-alt" id="velvetInfo" style="padding-top: 106px; ">
     <section class="clearfix">
-        <div id="player" height="473px" width="689px" class="devices"></div>
+        <div id="player" height="473px" width="689px" class="devices" style="top: 23px; "></div>
 
-        <h4>Somos ¡Velvet Room!</h4>
+        <h3 style="color: #36afda;">Somos ¡Velvet Room!</h3>
         <p>
             Buscamos ofrecer el mejor servicio de juego para nuestros clientes y mantener activa una comunidad
-            participativa y satisfecha, por esto ofrecemos eventos especiales con premiación para todos nuestros
-            clientes</p>
+            participativa y satisfecha, por esto ofrecemos eventos especiales con premiación para todos</p>
         <p>
-            Nuestra misión es ofrecer lo mejor en entretenimiento para nuestros clientes, ofreciéndoles un espacio
+            Nuestra misión es ofrecer lo mejor en entretenimiento a quienes nos visiten, ofreciéndoles un espacio
             seguro, limpio y amigable en donde puedan disfrutar al máximo dentro de un ambiente justamente competitivo
         </p>
 
@@ -181,9 +182,9 @@
 
 <div class="index-photography-cta my-4">
     <h2>
-        ¡Nuevo producto en camino!
+        ¡Muy pronto, darkness ablaze!
     </h2>
-    <a href="https://www.facebook.com/VelvetRoomGameStore" class="scroll">
+    <a href="https://api.whatsapp.com/send?phone=+50687537917" >
         Contáctanos
     </a>
 </div>
@@ -213,13 +214,13 @@
     </div>
 </div>
 
-<div class="index-photography-cta my-4">
+<div class="index-photography-cta my-4"  style="background-image:url('assets/images/graphics/spacial-bg.jpg');">
     <h2>
-        ¡Nuevo producto en camino!
+        Core Set 2021
     </h2>
-    <a href="https://www.facebook.com/VelvetRoomGameStore" class="scroll">
-        Contáctanos
-    </a>
+        <a href="https://api.whatsapp.com/send?phone=+50687537917" >
+            Contáctanos
+        </a>
 </div>
 
 <div class="agency-portfolio" id='others'>
@@ -255,12 +256,7 @@
 
         <div class="modal-content">
 
-            <div class="modal-header">
-                <h5 class="modal-title" id="productsModallabel1"></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
+     
 
             <div class="modal-body">
                 <form>
@@ -312,13 +308,16 @@
                             </div>
                             <div class="float-left">
                                 <div class="col-lg-12 col-md-12">
-                                    <h5>{{productModelForModal.name}}</h5>
+                                    <h6>{{productModelForModal.name}}</h6>
                                     <br>
-                                    <p>Descripción: {{productModelForModal.description}}</p>
+                                    <p style=" font-weight: bold;">Descripción: </p>
+                                    <p>{{productModelForModal.description}}</p>
                                     <br>
-                                    <p>Precio: ₡{{productModelForModal.price}}</p>
+                                    <p style=" font-weight: bold;">Precio: </p>
+                                    <p>₡ {{productModelForModal.price}}</p>
                                     <br>
-                                    <p>Estado: {{productModelForModal.status}}</p>
+                                    <p style=" font-weight: bold;">Estado: </p>
+                                    <p>{{productModelForModal.status}}</p>
                                 </div>
                             </div>
                         </div>
@@ -329,11 +328,13 @@
 
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Contactar</button>
+                <button (click)="contactar()" type="button" class="btn btn-primary" data-dismiss="modal">Contactar</button>
             </div>
 
         </div>
     </div>
 </div>
+
+
 
 <!-- Modal end -->

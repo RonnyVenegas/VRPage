@@ -29,7 +29,7 @@ export class MainComponent implements OnInit {
    '', '', '', 'MTGCORESET2020B.jpg');
 
   /** Messages */
-  notificationMessage = 'Medidas COVID-19: Actualmente sólo está disponible la zona de ventas en el local Gracias por su comprensión';
+  notificationMessage = 'Medidas COVID-19: Uso obligatorio de mascarilla, en el local';
 
   YT: any;
   video: any;
@@ -58,7 +58,7 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
 
     /** Video URL after watch?= */
-    this.video = 'xX0SmdXp5d4';
+    this.video = 'K_QMswDG6Ek';
     this.init();
 
     this.productList.push(new Product('MTGCS0', 'Mtg Core Set 2020', 'Booster Box',
@@ -204,6 +204,10 @@ export class MainComponent implements OnInit {
       case 101 || 150:
         break;
     }
+  }
+
+  contactar() {
+    window.location.href = 'https://api.whatsapp.com/send?phone=+50687537917'
   }
 
 }
